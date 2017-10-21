@@ -13,4 +13,4 @@ services:
 
 # use `docker-compose up` to deploy in docker mode.
 # use `docker stack deploy -c docker-compose.yml` to deploy in swarm mode.
-
+# image repo link: https://cloud.docker.com/swarm/anandvijaysingh/repository/list
