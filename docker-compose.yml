@@ -1,0 +1,16 @@
+version: "3"
+services:
+  service01:
+    # replace username/repo:tag with your name and image details
+    # this case anandvijaysingh/learndocker:latest
+    image: anandvijaysingh/learndocker:latest
+    deploy:
+      replicas: 10
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "4000:8080"
+
+# use `docker-compose up` to deploy in docker mode.
+# use `docker stack deploy -c docker-compose.yml` to deploy in swarm mode.
+
